@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(188, 217, 226);
+}
+
+h1.titulo{
+    text-align: center;
+}
+
+p.sobre{
+    color: blue;
+    text-align: center;
+}
+
+p.sobre:hover{
+    background-color: yellow;
+    color: red;
+}
+
+p.rojo::first-line{
+    color: red;
+
+}
+
+
+a:link{
+    background-color:blue ;
+    color: white;
+}
+a:visited{
+    background-color: white;
+    color: blue;
+}
+
+h3{
+    counter-reset: cuenta-lista;
+}
+p.lista::before{
+    content: counter(cuenta-lista);
+    counter-increment: cuenta-lista;
+}
